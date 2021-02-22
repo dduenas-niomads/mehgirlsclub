@@ -1975,23 +1975,23 @@
                   <div class="rte">
                      <ul class="nav nav-tabs" id="myTab" role="tablist" style="list-style-type:none;">
                         <li class="nav-item">
-                           <a class="nav-link active" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="true">Perfil</a>
+                           <a class="nav-link active" id="nav-how-tab" data-toggle="tab" href="#nav-how" role="tab" aria-controls="nav-how" aria-selected="false">¿Cómo funciona?</a>
                         </li>
                         <li class="nav-item">
                            <a class="nav-link" id="nav-meh-girls-club-tab" data-toggle="tab" href="#nav-meh-girls-club" role="tab" aria-controls="nav-meh-girls-club" aria-selected="false">Meh girls club</a>
                         </li>
                         <li class="nav-item">
-                           <a class="nav-link" id="nav-how-tab" data-toggle="tab" href="#nav-how" role="tab" aria-controls="nav-how" aria-selected="false">¿Cómo funciona?</a>
+                           <a class="nav-link" id="nav-benefits-tab" data-toggle="tab" href="#nav-benefits" role="tab" aria-controls="nav-benefits" aria-selected="false">Canjea tus puntos</a>
                         </li>
                         <li class="nav-item">
-                           <a class="nav-link" id="nav-benefits-tab" data-toggle="tab" href="#nav-benefits" role="tab" aria-controls="nav-benefits" aria-selected="false">Beneficios</a>
+                           <a class="nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="true">Perfil</a>
                         </li>
                      </ul>
                      <div class="tab-content" id="nav-tabContent">
-                        <div class="tab-pane fade show active" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
                            <div class="rte">
                               <br>
-                              <h3 class="font-weight-bold pl-0 my-4" align="center"><strong>Hola ¡Winnie Chue! - 139 puntos</strong></h3>
+                              <h3 class="font-weight-bold pl-0 my-4" align="center"><strong>Hola ¡Winnie! - 246 puntos</strong></h3>
                               <br>
                               <div class="row">
                                  
@@ -2001,9 +2001,15 @@
                                     <h4>Datos de perfil</h4>
                                     <br>
                                     <div class="form-group row" style="margin-bottom: 0rem;">
-                                       <label class="col-sm-3 col-form-label">Nombre completo</label>
+                                       <label class="col-sm-3 col-form-label">Nombres</label>
                                        <div class="col-sm-9">
-                                          <p>Winnie Chue</p>
+                                          <p>Winnie</p>
+                                       </div>
+                                    </div>
+                                    <div class="form-group row" style="margin-bottom: 0rem;">
+                                       <label class="col-sm-3 col-form-label">Apellidos</label>
+                                       <div class="col-sm-9">
+                                          <p>Chue</p>
                                        </div>
                                     </div>
                                     <div class="form-group row" style="margin-bottom: 0rem;">
@@ -2015,7 +2021,7 @@
                                     <div class="form-group row" style="margin-bottom: 0rem;">
                                        <label class="col-sm-3 col-form-label">Cumpleaños</label>
                                        <div class="col-sm-9">
-                                          <p><a style="cursor: pointer; color: #706f6f;" onclick="profileForm(1);">Ingresa tu fecha de cumpleaños</a></p>
+                                          <p><a style="cursor: pointer; color: #706f6f;" onclick="profileForm(1);">DD/MM/AA</a></p>
                                        </div>
                                     </div>
                                     <div class="form-group row" style="margin-bottom: 0rem;">
@@ -2143,7 +2149,7 @@
                         <div class="tab-pane fade" id="nav-meh-girls-club" role="tabpanel" aria-labelledby="nav-meh-girls-club-tab">
                            <div class="rte">
                               <br>
-                              <h3 class="font-weight-bold pl-0 my-4" align="center"><strong>Bronce - 139 puntos</strong></h3>
+                              <h3 class="font-weight-bold pl-0 my-4" align="center"><strong>MEH INTERN - 246 puntos</strong></h3>
                               <br>
                               <div class="steps-form">
                                  <div class="steps-row setup-panel">
@@ -2186,8 +2192,9 @@
                                        <div class="table-wrap" style="border-radius: 10px;">
                                           <table class="table table-bordered" style="font-size: 12px;">
                                              <thead class="table-dark">
-                                                <th>Opciones</th>
+                                                <th>Beneficios</th>
                                                 <th>Disponibilidad</th>
+                                                <th>Condiciones</th>
                                              </thead>
                                              <tbody>
                                                 <tr>
@@ -2200,6 +2207,9 @@
                                                          </svg>
                                                       </i> Regalos por cumpleaños</td>
                                                    <td>10% off</td>
+                                                   <td>Sujeto a disponibilidad de stock
+                                                      No aplica con algunos descuentos y/o promociones
+                                                      En caso no se pueda usar, contactarse con info@mehperu.com o al WA +51 952928928</td>
                                                 </tr>
                                                 <tr id="1rc" style="display: none;">
                                                    <td style="border: 0px solid black;">Detalle de regalos por cumpleaños</td>
@@ -2213,7 +2223,8 @@
                                                             <circle cx="8" cy="4.5" r="1"/>
                                                          </svg>
                                                       </i> Descuento vitalicio</td>
-                                                   <td></td>
+                                                   <td>No</td>
+                                                   <td>No aplica con otros descuentos y/o promociones</td>
                                                 </tr>
                                                 <tr id="1dv" style="display: none;">
                                                    <td style="border: 0px solid black;">Detalle de descuento vitalicio</td>
@@ -2227,7 +2238,10 @@
                                                             <circle cx="8" cy="4.5" r="1"/>
                                                          </svg>
                                                       </i> Acceso prioritario</td>
-                                                   <td></td>
+                                                   <td>No</td>
+                                                   <td>
+                                                      Acceso prioritario a pre-ventas y ventas cerradas en tienda
+                                                   </td>
                                                 </tr>
                                                 <tr id="1ap" style="display: none;">
                                                    <td style="border: 0px solid black;">Detalle de acceso prioritario</td>
@@ -2241,7 +2255,8 @@
                                                             <circle cx="8" cy="4.5" r="1"/>
                                                          </svg>
                                                       </i> Sorteo mensual</td>
-                                                   <td></td>
+                                                   <td>No</td>
+                                                   <td>Sorteos mensuales para nuestros miembros del club.</td>
                                                 </tr>
                                                 <tr id="1sm" style="display: none;">
                                                    <td style="border: 0px solid black;">Detalle de sorteo mensual</td>
@@ -2255,7 +2270,9 @@
                                                             <circle cx="8" cy="4.5" r="1"/>
                                                          </svg>
                                                       </i> Free shipping vitalicio</td>
-                                                   <td></td>
+                                                   <td>No</td>
+                                                   <td>Válido para todos los envíos nacionales
+                                                      Envío prioritario sujeto a disponibilidad y fechas</td>
                                                 </tr>
                                                 <tr id="1sv" style="display: none;">
                                                    <td style="border: 0px solid black;">Detalle de shipping vitalicio</td>
@@ -2274,6 +2291,7 @@
                                              <thead class="table-dark">
                                                 <th>Opciones</th>
                                                 <th>Disponibilidad</th>
+                                                <th>Condiciones</th>
                                              </thead>
                                              <tbody>
                                                 <tr>
@@ -2286,6 +2304,9 @@
                                                          </svg>
                                                       </i> Regalos por cumpleaños</td>
                                                    <td>10% off</td>
+                                                   <td>Sujeto a disponibilidad de stock
+                                                      No aplica con algunos descuentos y/o promociones
+                                                      En caso no se pueda usar, contactarse con info@mehperu.com o al WA +51 952928928</td>
                                                 </tr>
                                                 <tr id="2rc" style="display: none;">
                                                    <td style="border: 0px solid black;">Detalle de regalos por cumpleaños</td>
@@ -2299,7 +2320,8 @@
                                                             <circle cx="8" cy="4.5" r="1"/>
                                                          </svg>
                                                       </i> Descuento vitalicio</td>
-                                                   <td></td>
+                                                   <td>No</td>
+                                                   <td>No aplica con otros descuentos y/o promociones</td>
                                                 </tr>
                                                 <tr id="2dv" style="display: none;">
                                                    <td style="border: 0px solid black;">Detalle de descuento vitalicio</td>
@@ -2313,7 +2335,10 @@
                                                             <circle cx="8" cy="4.5" r="1"/>
                                                          </svg>
                                                       </i> Acceso prioritario</td>
-                                                   <td></td>
+                                                   <td>No</td>
+                                                   <td>
+                                                      Acceso prioritario a pre-ventas y ventas cerradas en tienda
+                                                   </td>
                                                 </tr>
                                                 <tr id="2ap" style="display: none;">
                                                    <td style="border: 0px solid black;">Detalle de acceso prioritario</td>
@@ -2328,6 +2353,7 @@
                                                          </svg>
                                                       </i> Sorteo mensual</td>
                                                    <td>Sí</td>
+                                                   <td>Sorteos mensuales para nuestros miembros del club.</td>
                                                 </tr>
                                                 <tr id="2sm" style="display: none;">
                                                    <td style="border: 0px solid black;">Detalle de sorteo mensual</td>
@@ -2341,7 +2367,9 @@
                                                             <circle cx="8" cy="4.5" r="1"/>
                                                          </svg>
                                                       </i> Free shipping vitalicio</td>
-                                                   <td></td>
+                                                   <td>No</td>
+                                                   <td>Válido para todos los envíos nacionales
+                                                      Envío prioritario sujeto a disponibilidad y fechas</td>
                                                 </tr>
                                                 <tr id="2sv" style="display: none;">
                                                    <td style="border: 0px solid black;">Detalle de shipping vitalicio</td>
@@ -2360,6 +2388,7 @@
                                              <thead class="table-dark">
                                                 <th>Opciones</th>
                                                 <th>Disponibilidad</th>
+                                                <th>Condiciones</th>
                                              </thead>
                                              <tbody>
                                                 <tr>
@@ -2372,6 +2401,9 @@
                                                          </svg>
                                                       </i> Regalos por cumpleaños</td>
                                                    <td>15% off</td>
+                                                   <td>Sujeto a disponibilidad de stock
+                                                      No aplica con algunos descuentos y/o promociones
+                                                      En caso no se pueda usar, contactarse con info@mehperu.com o al WA +51 952928928</td>
                                                 </tr>
                                                 <tr id="3rc" style="display: none;">
                                                    <td style="border: 0px solid black;">Detalle de regalos por cumpleaños</td>
@@ -2386,6 +2418,7 @@
                                                          </svg>
                                                       </i> Descuento vitalicio</td>
                                                    <td>15% off</td>
+                                                   <td>No aplica con otros descuentos y/o promociones</td>
                                                 </tr>
                                                 <tr id="3dv" style="display: none;">
                                                    <td style="border: 0px solid black;">Detalle de descuento vitalicio</td>
@@ -2400,6 +2433,9 @@
                                                          </svg>
                                                       </i> Acceso prioritario</td>
                                                    <td>Sí</td>
+                                                   <td>
+                                                      Acceso prioritario a pre-ventas y ventas cerradas en tienda
+                                                   </td>
                                                 </tr>
                                                 <tr id="3ap" style="display: none;">
                                                    <td style="border: 0px solid black;">Detalle de acceso prioritario</td>
@@ -2414,6 +2450,7 @@
                                                          </svg>
                                                       </i> Sorteo mensual</td>
                                                    <td>Sí</td>
+                                                   <td>Sorteos mensuales para nuestros miembros del club.</td>
                                                 </tr>
                                                 <tr id="3sm" style="display: none;">
                                                    <td style="border: 0px solid black;">Detalle de sorteo mensual</td>
@@ -2427,7 +2464,9 @@
                                                             <circle cx="8" cy="4.5" r="1"/>
                                                          </svg>
                                                       </i> Free shipping vitalicio</td>
-                                                   <td></td>
+                                                   <td>No</td>
+                                                   <td>Válido para todos los envíos nacionales
+                                                      Envío prioritario sujeto a disponibilidad y fechas</td>
                                                 </tr>
                                                 <tr id="3sv" style="display: none;">
                                                    <td style="border: 0px solid black;">Detalle de shipping vitalicio</td>
@@ -2446,6 +2485,7 @@
                                              <thead class="table-dark">
                                                 <th>Opciones</th>
                                                 <th>Disponibilidad</th>
+                                                <th>Condiciones</th>
                                              </thead>
                                              <tbody>
                                                 <tr>
@@ -2458,6 +2498,9 @@
                                                          </svg>
                                                       </i> Regalos por cumpleaños</td>
                                                    <td>Prenda sorpresa</td>
+                                                   <td>Sujeto a disponibilidad de stock
+                                                      No aplica con algunos descuentos y/o promociones
+                                                      En caso no se pueda usar, contactarse con info@mehperu.com o al WA +51 952928928</td>
                                                 </tr>
                                                 <tr id="4rc" style="display: none;">
                                                    <td style="border: 0px solid black;">Detalle de regalos por cumpleaños</td>
@@ -2472,6 +2515,7 @@
                                                          </svg>
                                                       </i> Descuento vitalicio</td>
                                                    <td>20% off</td>
+                                                   <td>No aplica con otros descuentos y/o promociones</td>
                                                 </tr>
                                                 <tr id="4dv" style="display: none;">
                                                    <td style="border: 0px solid black;">Detalle de descuento vitalicio</td>
@@ -2486,6 +2530,9 @@
                                                          </svg>
                                                       </i> Acceso prioritario</td>
                                                    <td>Sí</td>
+                                                   <td>
+                                                      Acceso prioritario a pre-ventas y ventas cerradas en tienda
+                                                   </td>
                                                 </tr>
                                                 <tr id="4ap" style="display: none;">
                                                    <td style="border: 0px solid black;">Detalle de acceso prioritario</td>
@@ -2500,6 +2547,7 @@
                                                          </svg>
                                                       </i> Sorteo mensual</td>
                                                    <td>Sí</td>
+                                                   <td>Sorteos mensuales para nuestros miembros del club.</td>
                                                 </tr>
                                                 <tr id="4sm" style="display: none;">
                                                    <td style="border: 0px solid black;">Detalle de sorteo mensual</td>
@@ -2513,7 +2561,9 @@
                                                             <circle cx="8" cy="4.5" r="1"/>
                                                          </svg>
                                                       </i> Free shipping vitalicio</td>
-                                                   <td></td>
+                                                   <td>No</td>
+                                                   <td>Válido para todos los envíos nacionales
+                                                      Envío prioritario sujeto a disponibilidad y fechas</td>
                                                 </tr>
                                                 <tr id="4sv" style="display: none;">
                                                    <td style="border: 0px solid black;">Detalle de shipping vitalicio</td>
@@ -2532,6 +2582,7 @@
                                              <thead class="table-dark">
                                                 <th>Opciones</th>
                                                 <th>Disponibilidad</th>
+                                                <th>Condiciones</th>
                                              </thead>
                                              <tbody>
                                                 <tr>
@@ -2544,6 +2595,9 @@
                                                          </svg>
                                                       </i> Regalos por cumpleaños</td>
                                                    <td>Prenda favorita (Max 149 soles)</td>
+                                                   <td>Sujeto a disponibilidad de stock
+                                                      No aplica con algunos descuentos y/o promociones
+                                                      En caso no se pueda usar, contactarse con info@mehperu.com o al WA +51 952928928</td>
                                                 </tr>
                                                 <tr id="5rc" style="display: none;">
                                                    <td style="border: 0px solid black;">Detalle de regalos por cumpleaños</td>
@@ -2558,6 +2612,7 @@
                                                          </svg>
                                                       </i> Descuento vitalicio</td>
                                                    <td>25% off</td>
+                                                   <td>No aplica con otros descuentos y/o promociones</td>
                                                 </tr>
                                                 <tr id="5dv" style="display: none;">
                                                    <td style="border: 0px solid black;">Detalle de descuento vitalicio</td>
@@ -2572,6 +2627,9 @@
                                                          </svg>
                                                       </i> Acceso prioritario</td>
                                                    <td>Sí</td>
+                                                   <td>
+                                                      Acceso prioritario a pre-ventas y ventas cerradas en tienda
+                                                   </td>
                                                 </tr>
                                                 <tr id="5ap" style="display: none;">
                                                    <td style="border: 0px solid black;">Detalle de acceso prioritario</td>
@@ -2586,6 +2644,7 @@
                                                          </svg>
                                                       </i> Sorteo mensual</td>
                                                    <td>Sí</td>
+                                                   <td>Sorteos mensuales para nuestros miembros del club.</td>
                                                 </tr>
                                                 <tr id="5sm" style="display: none;">
                                                    <td style="border: 0px solid black;">Detalle de sorteo mensual</td>
@@ -2600,6 +2659,8 @@
                                                          </svg>
                                                       </i> Free shipping vitalicio</td>
                                                    <td>Sí</td>
+                                                   <td>Válido para todos los envíos nacionales
+                                                      Envío prioritario sujeto a disponibilidad y fechas</td>
                                                 </tr>
                                                 <tr id="5sv" style="display: none;">
                                                    <td style="border: 0px solid black;">Detalle de shipping vitalicio</td>
@@ -2613,30 +2674,106 @@
                               </form>
                            </div>
                         </div>
-                        <div class="tab-pane fade" id="nav-how" role="tabpanel" aria-labelledby="nav-how-tab">
+                        <div class="tab-pane fade  show active" id="nav-how" role="tabpanel" aria-labelledby="nav-how-tab">
                            <div class="rte">
+                              <style>
+                                 /* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-box-back {
+  background-color: white;
+  color: black;
+  transform: rotateY(180deg);
+}
+                              </style>
                               <br>
                               <div class="row">
-                                 <div class="col-6 col-md-4">
-                                    <br><img src="/statics/img/how/01.png" alt="" srcset="">
+                                 <div class="col-6 col-md-4 flip-box">
+                                    <div class="flip-box-inner">
+                                      <div class="flip-box-front">
+                                        <img src="/statics/img/how/01.png">
+                                      </div>
+                                      <div class="flip-box-back" valign="middle">
+                                        <h2>Valido para compras en tienda y web.</h2>
+                                      </div>
+                                    </div>
                                  </div>
-                                 <div class="col-6 col-md-4">
-                                    <br>
-                                    <a href="javascript:window.open('https://instagram.com/mehperu','Popup', 'location,status,scrollbars,resizable,width=800, height=800');">
-                                       <img src="/statics/img/how/02.png" alt="" srcset="">
-                                    </a>
+                                 <div class="col-6 col-md-4 flip-box">
+                                    <div class="flip-box-inner">
+                                      <div class="flip-box-front">
+                                        <img src="/statics/img/how/02.png">
+                                      </div>
+                                      <div class="flip-box-back" valign="middle">
+                                        <h2>Seguir a @mehperu en Instagram</h2>
+                                      </div>
+                                    </div>
                                  </div>
-                                 <div class="col-6 col-md-4">
-                                    <br>
-                                    <a href="whatsapp://send?text=Ingresa a Meh Perú! https://mehperu.com" data-action="share/whatsapp/share">
-                                       <img src="/statics/img/how/03.png" alt="" srcset="">
-                                    </a>
+                                 <div class="col-6 col-md-4 flip-box">
+                                    <div class="flip-box-inner">
+                                      <div class="flip-box-front">
+                                        <img src="/statics/img/how/03.png">
+                                      </div>
+                                      <div class="flip-box-back" valign="middle">
+                                        <h2>Valido para compartir via whatsapp o por instagram.</h2>
+                                      </div>
+                                    </div>
                                  </div>
-                                 <div class="col-6 col-md-4">
-                                    <br><img src="/statics/img/how/04.png" alt="" srcset="">
+                                 <div class="col-6 col-md-4 flip-box">
+                                    <div class="flip-box-inner">
+                                      <div class="flip-box-front">
+                                        <img src="/statics/img/how/04.png">
+                                      </div>
+                                      <div class="flip-box-back" valign="middle">
+                                        <h2>No olvides registrar tu cumpleanos en tu perfil</h2>
+                                      </div>
+                                    </div>
                                  </div>
-                                 <div class="col-6 col-md-4">
-                                    <br><img src="/statics/img/how/05.png" alt="" srcset="">
+                                 <div class="col-6 col-md-4 flip-box">
+                                    <div class="flip-box-inner">
+                                      <div class="flip-box-front">
+                                        <img src="/statics/img/how/05.png">
+                                      </div>
+                                      <div class="flip-box-back" valign="middle">
+                                        <h2>Sólo tienes que etiquetarnos con un Outfit meh y entraras al concurso mensual automaticamente.</h2>
+                                      </div>
+                                    </div>
                                  </div>
                               </div>
                               <br>
@@ -2666,35 +2803,105 @@
                            <div class="rte">
                               <br>
                               <div class="row">
-                                 <div class="col-6 col-md-4">
-                                    <br><img src="/statics/img/benefits/01.png" alt="" srcset="">
+                                 <div class="col-6 col-md-4 flip-box">
+                                    <div class="flip-box-inner">
+                                      <div class="flip-box-front">
+                                        <img src="/statics/img/benefits/01.png">
+                                      </div>
+                                      <div class="flip-box-back" valign="middle">
+                                        <h2>"No aplica con otros descuentos y/o promociones. Sólo ingresa el código al hacer checkout"</h2>
+                                      </div>
+                                    </div>
                                  </div>
-                                 <div class="col-6 col-md-4">
-                                    <br><img src="/statics/img/benefits/02.png" alt="" srcset="">
+                                 <div class="col-6 col-md-4 flip-box">
+                                    <div class="flip-box-inner">
+                                      <div class="flip-box-front">
+                                        <img src="/statics/img/benefits/02.png">
+                                      </div>
+                                      <div class="flip-box-back" valign="middle">
+                                        <h2>"No aplica con otros descuentos y/o promociones. Sólo ingresa el código al hacer checkout"</h2>
+                                      </div>
+                                    </div>
                                  </div>
-                                 <div class="col-6 col-md-4">
-                                    <br><img src="/statics/img/benefits/03.png" alt="" srcset="">
+                                 <div class="col-6 col-md-4 flip-box">
+                                    <div class="flip-box-inner">
+                                      <div class="flip-box-front">
+                                        <img src="/statics/img/benefits/03.png">
+                                      </div>
+                                      <div class="flip-box-back" valign="middle">
+                                        <h2>"No aplica con otros descuentos y/o promociones. Sólo ingresa el código al hacer checkout"</h2>
+                                      </div>
+                                    </div>
                                  </div>
-                                 <div class="col-6 col-md-4">
-                                    <br><img src="/statics/img/benefits/04.png" alt="" srcset="">
+                                 <div class="col-6 col-md-4 flip-box">
+                                    <div class="flip-box-inner">
+                                      <div class="flip-box-front">
+                                        <img src="/statics/img/benefits/04.png">
+                                      </div>
+                                      <div class="flip-box-back" valign="middle">
+                                        <h2>"No aplica con otros descuentos y/o promociones. Sólo ingresa el código al hacer checkout"</h2>
+                                      </div>
+                                    </div>
                                  </div>
-                                 <div class="col-6 col-md-4">
-                                    <br><img src="/statics/img/benefits/05.png" alt="" srcset="">
+                                 <div class="col-6 col-md-4 flip-box">
+                                    <div class="flip-box-inner">
+                                      <div class="flip-box-front">
+                                        <img src="/statics/img/benefits/05.png">
+                                      </div>
+                                      <div class="flip-box-back" valign="middle">
+                                        <h2>"No aplica con otros descuentos y/o promociones. Sólo ingresa el código al hacer checkout"</h2>
+                                      </div>
+                                    </div>
                                  </div>
-                                 <div class="col-6 col-md-4">
-                                    <br><img src="/statics/img/benefits/06.png" alt="" srcset="">
+                                 <div class="col-6 col-md-4 flip-box">
+                                    <div class="flip-box-inner">
+                                      <div class="flip-box-front">
+                                        <img src="/statics/img/benefits/06.png">
+                                      </div>
+                                      <div class="flip-box-back" valign="middle">
+                                        <h2>"No aplica con otros descuentos y/o promociones. Sólo ingresa el código al hacer checkout"</h2>
+                                      </div>
+                                    </div>
                                  </div>
-                                 <div class="col-6 col-md-4">
-                                    <br><img src="/statics/img/benefits/07.png" alt="" srcset="">
+                                 <div class="col-6 col-md-4 flip-box">
+                                    <div class="flip-box-inner">
+                                      <div class="flip-box-front">
+                                        <img src="/statics/img/benefits/07.png">
+                                      </div>
+                                      <div class="flip-box-back" valign="middle">
+                                        <h2>"No aplica con otros descuentos y/o promociones. Sólo ingresa el código al hacer checkout"</h2>
+                                      </div>
+                                    </div>
                                  </div>
-                                 <div class="col-6 col-md-4">
-                                    <br><img src="/statics/img/benefits/08.png" alt="" srcset="">
+                                 <div class="col-6 col-md-4 flip-box">
+                                    <div class="flip-box-inner">
+                                      <div class="flip-box-front">
+                                        <img src="/statics/img/benefits/08.png">
+                                      </div>
+                                      <div class="flip-box-back" valign="middle">
+                                        <h2>Recibe un meh basic gratis en tu próxima compra</h2>
+                                      </div>
+                                    </div>
                                  </div>
-                                 <div class="col-6 col-md-4">
-                                    <br><img src="/statics/img/benefits/09.png" alt="" srcset="">
+                                 <div class="col-6 col-md-4 flip-box">
+                                    <div class="flip-box-inner">
+                                      <div class="flip-box-front">
+                                        <img src="/statics/img/benefits/09.png">
+                                      </div>
+                                      <div class="flip-box-back" valign="middle">
+                                        <h2>Recibe tu denim favorito en tu próxima compra</h2>
+                                      </div>
+                                    </div>
                                  </div>
-                                 <div class="col-6 col-md-4">
-                                    <br><img src="/statics/img/benefits/10.png" alt="" srcset="">
+                                 <div class="col-6 col-md-4 flip-box">
+                                    <div class="flip-box-inner">
+                                      <div class="flip-box-front">
+                                        <img src="/statics/img/benefits/10.png">
+                                      </div>
+                                      <div class="flip-box-back" valign="middle">
+                                        <h2>Recibe tu par de zapatos favoritos en tu próxima compra</h2>
+                                      </div>
+                                    </div>
                                  </div>
                               </div>
                            </div>
