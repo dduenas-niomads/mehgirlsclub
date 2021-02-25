@@ -809,19 +809,19 @@
          color: #706f6f;              
          font-size: 12px;
          }
-         .image_full{
-         display:block;
+         .banner_full{
+            display:flex;
          }
-         .image_mobile{
-         display:none;
+         .banner_mobile{
+            display:none;
          }
          @media (max-width: 640px) and (min-width: 320px){
-         .image_full{
-         display:none;
-         }
-         .image_mobile{
-         display:block;
-         }
+            .banner_full{
+               display:none;
+            }
+            .banner_mobile{
+               display:block;
+            }
          }
       </style>
       <script type="text/javascript" async="" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script><script type="text/javascript" src="https://shopiapps.in/whatsapp-share/load_div.php?shop=pruebasrebmeh.myshopify.com"></script><script type="text/javascript" src="https://shopiapps.in/whatsapp-share/inc/whatsapp-button_new.js"></script><script type="module" defer="" src="https://cdn.shopify.com/shopifycloud/consent-tracking-api/v0.1/consent-tracking-api.js"></script>
@@ -1969,7 +1969,46 @@
             <div class="grid">
                <div class="grid__item post-large--two-thirds push--post-large--one-sixth">
                   <div class="section-header">
-                     <img src="statics/img/banners/MGC.png" style="width: 100%;" class="image_full">
+                     <div class="row banner_full">
+                        <div class="col-6" align="center">
+                           <img src="statics/img/banners/hey_babe.png" style="width: 50%;">
+                           <br>
+                           <h1><b>MEH INTERN</b></h1>
+                           <h3>Gracias por ser parte de Meh Girls Club!. Tenemos descuentos y regalos para tí.</h3>
+                           <br>
+                           <div class="row">
+
+                              <div class="col-4">
+                              </div>
+                              <div class="col-4">
+                                 <button type="button" class="btn" style="background-color: #eacaca;">MI PERFIL</button>
+                              </div>
+                              <div class="col-4">
+                                 <!-- <button type="button" class="btn" style="background-color: #eacaca;">BENEFICIOS</button> -->
+                              </div>
+                              <div class="col-4">
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-6">
+                           <img src="statics/img/banners/banner_logo.png" style="width: 50%;">
+                        </div>
+                     </div>
+                     <div class="row banner_mobile">
+                        <div>
+                           <img src="statics/img/banners/banner_logo.png">
+                        </div>
+                        <div align="center">
+                           <img src="statics/img/banners/hey_babe.png" style="padding: 10px;">
+                           <br>
+                           <h1><b>MEH INTERN</b></h1>
+                           <h3>Gracias por ser parte de Meh Girls Club!. Tenemos descuentos y regalos para tí.</h3>
+                           <br>
+                           <div class="row" style="margin-left: 35%;">
+                                 <button type="button" class="btn" style="background-color: #eacaca;">MI PERFIL</button>  
+                           </div>
+                        </div>
+                     </div>
                   </div>
                   <hr>
                   <div class="rte">
@@ -2678,50 +2717,51 @@
                            <div class="rte">
                               <style>
                                  /* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
-.flip-box {
-  background-color: transparent;
-  width: 300px;
-  height: 200px;
-  border: 1px solid #f1f1f1;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
-}
+                                 .flip-box {
+                                    background-color: transparent;
+                                    width: 300px;
+                                    height: 200px;
+                                    /* border: 1px solid #f1f1f1; */
+                                    margin-bottom: 10px;
+                                    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+                                 }
 
-/* This container is needed to position the front and back side */
-.flip-box-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
+                                 /* This container is needed to position the front and back side */
+                                 .flip-box-inner {
+                                    position: relative;
+                                    width: 100%;
+                                    height: 100%;
+                                    text-align: center;
+                                    transition: transform 0.8s;
+                                    transform-style: preserve-3d;
+                                 }
 
-/* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-box:hover .flip-box-inner {
-  transform: rotateY(180deg);
-}
+                                 /* Do an horizontal flip when you move the mouse over the flip box container */
+                                 .flip-box:hover .flip-box-inner {
+                                    transform: rotateY(180deg);
+                                 }
 
-/* Position the front and back side */
-.flip-box-front, .flip-box-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
-  backface-visibility: hidden;
-}
+                                 /* Position the front and back side */
+                                 .flip-box-front, .flip-box-back {
+                                    position: absolute;
+                                    width: 100%;
+                                    height: 100%;
+                                    -webkit-backface-visibility: hidden; /* Safari */
+                                    backface-visibility: hidden;
+                                 }
 
-/* Style the front side (fallback if image is missing) */
-.flip-box-front {
-  background-color: #bbb;
-  color: black;
-}
+                                 /* Style the front side (fallback if image is missing) */
+                                 .flip-box-front {
+                                    background-color: #bbb;
+                                    color: black;
+                                 }
 
-/* Style the back side */
-.flip-box-back {
-  background-color: white;
-  color: black;
-  transform: rotateY(180deg);
-}
+                                 /* Style the back side */
+                                 .flip-box-back {
+                                    background-color: white;
+                                    color: black;
+                                    transform: rotateY(180deg);
+                                 }
                               </style>
                               <div>
                                  <h3 class="font-weight-bold pl-0 my-4" align="center"><strong>Gana puntos y sube de nivel para recibir beneficios exclusivos</strong></h3>
@@ -2787,6 +2827,16 @@
                                       </div>
                                       <div class="flip-box-back" valign="middle">
                                         <h2>Sólo tienes que etiquetarnos con un Outfit meh y entraras al concurso mensual automaticamente.</h2>
+                                      </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-6 col-md-4 flip-box">
+                                    <div class="flip-box-inner">
+                                      <div class="flip-box-front">
+                                        <img src="/statics/img/how/06.png">
+                                      </div>
+                                      <div class="flip-box-back" valign="middle">
+                                        <h2>Valido solo por 1 vez y si se usa ropa de Meh Peru</h2>
                                       </div>
                                     </div>
                                  </div>
