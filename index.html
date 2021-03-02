@@ -115,9 +115,9 @@
          border-radius: 15px;
          margin-top: 0; }
          @media screen and (max-width: 480px) {
-         .steps-form .steps-row:before {
-         top: 10px;
-         }
+            .steps-form .steps-row:before {
+               top: 10px;
+            }
          }
       </style>
       <script data-cfasync="false" type="text/javascript">
@@ -771,43 +771,43 @@
          [font-weight:500];
          }
          .montserratBold {
-         font-family: 'Montserrat-SemiBold';
-         font-weight: 600;
-         margin-top: 0.5em;
-         font-size: 20px;
+            font-family: 'Montserrat-SemiBold';
+            font-weight: 600;
+            margin-top: 0.5em;
+            font-size: 20px;
          }
          .montserratBoldP {
-         font-family: 'Montserrat-SemiBold';
-         font-weight: 600;
-         margin-top: 0.5em;
-         font-size: 10px;
+            font-family: 'Montserrat-SemiBold';
+            font-weight: 600;
+            margin-top: 0.5em;
+            font-size: 10px;
          }
          .montserratLight {
-         font-family: 'Montserrat-Light';
-         font-weight: 300;
+            font-family: 'Montserrat-Light';
+            font-weight: 300;
          }
          .montserratLightP {
-         font-family: 'Montserrat-Light';
-         font-weight: 300;
-         font-size: 10px;
-         margin: 0px;
+            font-family: 'Montserrat-Light';
+            font-weight: 300;
+            font-size: 10px;
+            margin: 0px;
          }
          .montserratMedium {
-         font-family: 'Montserrat-Medium';
-         font-weight: 500;
-         color: #706f6f;
+            font-family: 'Montserrat-Medium';
+            font-weight: 500;
+            color: #706f6f;
          }
          .montserratMediumP {
-         font-family: 'Montserrat-Medium';
-         font-weight: 500;
-         color: #706f6f;              
-         font-size: 15px;
+            font-family: 'Montserrat-Medium';
+            font-weight: 500;
+            color: #706f6f;              
+            font-size: 15px;
          }
          .montserratMediumPM {
-         font-family: 'Montserrat-Medium';
-         font-weight: 500;
-         color: #706f6f;              
-         font-size: 12px;
+            font-family: 'Montserrat-Medium';
+            font-weight: 500;
+            color: #706f6f;              
+            font-size: 12px;
          }
          .banner_full{
             display:flex;
@@ -815,12 +815,64 @@
          .banner_mobile{
             display:none;
          }
+         /* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+         .flip-box {
+            background-color: transparent;
+            width: 300px;
+            height: 200px;
+            /* border: 1px solid #f1f1f1; */
+            margin-bottom: 10px;
+            perspective: 1000px; /* Remove this if you don't want the 3D effect */
+         }
+
+         /* This container is needed to position the front and back side */
+         .flip-box-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+         }
+
+         /* Do an horizontal flip when you move the mouse over the flip box container */
+         .flip-box:hover .flip-box-inner {
+            transform: rotateY(180deg);
+         }
+
+         /* Position the front and back side */
+         .flip-box-front, .flip-box-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden; /* Safari */
+            backface-visibility: hidden;
+         }
+
+         /* Style the front side (fallback if image is missing) */
+         .flip-box-front {
+            background-color: #bbb;
+            color: black;
+         }
+
+         /* Style the back side */
+         .flip-box-back {
+            background-color: white;
+            color: black;
+            transform: rotateY(180deg);
+         }
          @media (max-width: 640px) and (min-width: 320px){
             .banner_full{
                display:none;
             }
             .banner_mobile{
                display:block;
+            }
+            .flip-box-back-font{
+               font-size: 12px;
+            }
+            .flip-box{
+               height: 60px;
             }
          }
       </style>
@@ -2715,54 +2767,6 @@
                         </div>
                         <div class="tab-pane fade  show active" id="nav-how" role="tabpanel" aria-labelledby="nav-how-tab">
                            <div class="rte">
-                              <style>
-                                 /* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
-                                 .flip-box {
-                                    background-color: transparent;
-                                    width: 300px;
-                                    height: 200px;
-                                    /* border: 1px solid #f1f1f1; */
-                                    margin-bottom: 10px;
-                                    perspective: 1000px; /* Remove this if you don't want the 3D effect */
-                                 }
-
-                                 /* This container is needed to position the front and back side */
-                                 .flip-box-inner {
-                                    position: relative;
-                                    width: 100%;
-                                    height: 100%;
-                                    text-align: center;
-                                    transition: transform 0.8s;
-                                    transform-style: preserve-3d;
-                                 }
-
-                                 /* Do an horizontal flip when you move the mouse over the flip box container */
-                                 .flip-box:hover .flip-box-inner {
-                                    transform: rotateY(180deg);
-                                 }
-
-                                 /* Position the front and back side */
-                                 .flip-box-front, .flip-box-back {
-                                    position: absolute;
-                                    width: 100%;
-                                    height: 100%;
-                                    -webkit-backface-visibility: hidden; /* Safari */
-                                    backface-visibility: hidden;
-                                 }
-
-                                 /* Style the front side (fallback if image is missing) */
-                                 .flip-box-front {
-                                    background-color: #bbb;
-                                    color: black;
-                                 }
-
-                                 /* Style the back side */
-                                 .flip-box-back {
-                                    background-color: white;
-                                    color: black;
-                                    transform: rotateY(180deg);
-                                 }
-                              </style>
                               <div>
                                  <h3 class="font-weight-bold pl-0 my-4" align="center"><strong>Gana puntos y sube de nivel para recibir beneficios exclusivos</strong></h3>
                                  
@@ -2786,7 +2790,7 @@
                                         <img src="/statics/img/how/01.png">
                                       </div>
                                       <div class="flip-box-back" valign="middle">
-                                        <h2>Valido para compras en tienda y web.</h2>
+                                        <h2 class="flip-box-back-font">Valido para compras en tienda y web.</h2>
                                       </div>
                                     </div>
                                  </div>
@@ -2796,7 +2800,7 @@
                                         <img src="/statics/img/how/02.png">
                                       </div>
                                       <div class="flip-box-back" valign="middle">
-                                        <h2>Seguir a @mehperu en Instagram</h2>
+                                        <h2 class="flip-box-back-font">Seguir a @mehperu en Instagram</h2>
                                       </div>
                                     </div>
                                  </div>
@@ -2806,7 +2810,7 @@
                                         <img src="/statics/img/how/03.png">
                                       </div>
                                       <div class="flip-box-back" valign="middle">
-                                        <h2>Valido para compartir via whatsapp o por instagram.</h2>
+                                        <h2 class="flip-box-back-font">Valido para compartir via whatsapp o por instagram.</h2>
                                       </div>
                                     </div>
                                  </div>
@@ -2816,7 +2820,7 @@
                                         <img src="/statics/img/how/04.png">
                                       </div>
                                       <div class="flip-box-back" valign="middle">
-                                        <h2>No olvides registrar tu cumpleanos en tu perfil</h2>
+                                        <h2 class="flip-box-back-font">No olvides registrar tu cumpleanos en tu perfil</h2>
                                       </div>
                                     </div>
                                  </div>
@@ -2826,7 +2830,7 @@
                                         <img src="/statics/img/how/05.png">
                                       </div>
                                       <div class="flip-box-back" valign="middle">
-                                        <h2>Sólo tienes que etiquetarnos con un Outfit meh y entraras al concurso mensual automaticamente.</h2>
+                                        <h2 class="flip-box-back-font">Sólo tienes que etiquetarnos con un Outfit meh y entraras al concurso mensual automaticamente.</h2>
                                       </div>
                                     </div>
                                  </div>
@@ -2836,7 +2840,7 @@
                                         <img src="/statics/img/how/06.png">
                                       </div>
                                       <div class="flip-box-back" valign="middle">
-                                        <h2>Valido solo por 1 vez y si se usa ropa de Meh Peru</h2>
+                                        <h2 class="flip-box-back-font">Valido solo por 1 vez y si se usa ropa de Meh Peru</h2>
                                       </div>
                                     </div>
                                  </div>
@@ -2874,7 +2878,7 @@
                                         <img src="/statics/img/benefits/01.png">
                                       </div>
                                       <div class="flip-box-back" valign="middle">
-                                        <h2>"No aplica con otros descuentos y/o promociones. Sólo ingresa el código al hacer checkout"</h2>
+                                        <h2 class="flip-box-back-font">"No aplica con otros descuentos y/o promociones. Sólo ingresa el código al hacer checkout"</h2>
                                       </div>
                                     </div>
                                  </div>
@@ -2884,7 +2888,7 @@
                                         <img src="/statics/img/benefits/02.png">
                                       </div>
                                       <div class="flip-box-back" valign="middle">
-                                        <h2>"No aplica con otros descuentos y/o promociones. Sólo ingresa el código al hacer checkout"</h2>
+                                        <h2 class="flip-box-back-font">"No aplica con otros descuentos y/o promociones. Sólo ingresa el código al hacer checkout"</h2>
                                       </div>
                                     </div>
                                  </div>
@@ -2894,7 +2898,7 @@
                                         <img src="/statics/img/benefits/03.png">
                                       </div>
                                       <div class="flip-box-back" valign="middle">
-                                        <h2>"No aplica con otros descuentos y/o promociones. Sólo ingresa el código al hacer checkout"</h2>
+                                        <h2 class="flip-box-back-font">"No aplica con otros descuentos y/o promociones. Sólo ingresa el código al hacer checkout"</h2>
                                       </div>
                                     </div>
                                  </div>
@@ -2904,7 +2908,7 @@
                                         <img src="/statics/img/benefits/04.png">
                                       </div>
                                       <div class="flip-box-back" valign="middle">
-                                        <h2>"No aplica con otros descuentos y/o promociones. Sólo ingresa el código al hacer checkout"</h2>
+                                        <h2 class="flip-box-back-font">"No aplica con otros descuentos y/o promociones. Sólo ingresa el código al hacer checkout"</h2>
                                       </div>
                                     </div>
                                  </div>
@@ -2914,7 +2918,7 @@
                                         <img src="/statics/img/benefits/05.png">
                                       </div>
                                       <div class="flip-box-back" valign="middle">
-                                        <h2>"No aplica con otros descuentos y/o promociones. Sólo ingresa el código al hacer checkout"</h2>
+                                        <h2 class="flip-box-back-font">"No aplica con otros descuentos y/o promociones. Sólo ingresa el código al hacer checkout"</h2>
                                       </div>
                                     </div>
                                  </div>
@@ -2924,7 +2928,7 @@
                                         <img src="/statics/img/benefits/06.png">
                                       </div>
                                       <div class="flip-box-back" valign="middle">
-                                        <h2>"No aplica con otros descuentos y/o promociones. Sólo ingresa el código al hacer checkout"</h2>
+                                        <h2 class="flip-box-back-font">"No aplica con otros descuentos y/o promociones. Sólo ingresa el código al hacer checkout"</h2>
                                       </div>
                                     </div>
                                  </div>
@@ -2934,7 +2938,7 @@
                                         <img src="/statics/img/benefits/07.png">
                                       </div>
                                       <div class="flip-box-back" valign="middle">
-                                        <h2>"No aplica con otros descuentos y/o promociones. Sólo ingresa el código al hacer checkout"</h2>
+                                        <h2 class="flip-box-back-font">"No aplica con otros descuentos y/o promociones. Sólo ingresa el código al hacer checkout"</h2>
                                       </div>
                                     </div>
                                  </div>
@@ -2944,7 +2948,7 @@
                                         <img src="/statics/img/benefits/08.png">
                                       </div>
                                       <div class="flip-box-back" valign="middle">
-                                        <h2>Recibe un meh basic gratis en tu próxima compra</h2>
+                                        <h2 class="flip-box-back-font">Recibe un meh basic gratis en tu próxima compra</h2>
                                       </div>
                                     </div>
                                  </div>
@@ -2954,7 +2958,7 @@
                                         <img src="/statics/img/benefits/09.png">
                                       </div>
                                       <div class="flip-box-back" valign="middle">
-                                        <h2>Recibe tu denim favorito en tu próxima compra</h2>
+                                        <h2 class="flip-box-back-font">Recibe tu denim favorito en tu próxima compra</h2>
                                       </div>
                                     </div>
                                  </div>
@@ -2964,7 +2968,7 @@
                                         <img src="/statics/img/benefits/10.png">
                                       </div>
                                       <div class="flip-box-back" valign="middle">
-                                        <h2>Recibe tu par de zapatos favoritos en tu próxima compra</h2>
+                                        <h2 class="flip-box-back-font">Recibe tu par de zapatos favoritos en tu próxima compra</h2>
                                       </div>
                                     </div>
                                  </div>
