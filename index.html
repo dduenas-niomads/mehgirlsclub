@@ -1771,13 +1771,6 @@
    </head>
    <body id="meh-girls-club" class="customer-logged-in template-page" style="font-family: 'Montserrat'; font-size: 12px;">
       <div id="shopify-section-header" class="shopify-section">
-         <div id="qab_container" style="display: block; color: inherit; height: 44px;">
-            <div id="qab_background" onclick="qab_button_on_click(event)" style="opacity: 1; margin: 0px; padding: 0px; left: 0px; height: auto; width: 100%; z-index: 1000000; position: fixed; cursor: pointer; top: 0px;">
-               <div id="qab_bar" style="text-align: center; margin: 0px; padding: 11px 10px; left: 0px; height: auto; width: 100%; box-sizing: border-box; border: none; background-color: rgb(192, 212, 204); color: rgb(255, 255, 255); font-size: 18px; line-height: 22.5px;">
-                  <div id="qab_content" style="text-align: center; display: inline-block; font-size: 18px;"><span id="qab_message" style="color: inherit; font-size: 18px;">25% OFF en toda la tienda. Se aplica automáticamente en el checkout. ♡ </span> </div>
-               </div>
-            </div>
-         </div>
          <style>
             .logo__image-wrapper {
             max-width: 70px;
@@ -1801,76 +1794,6 @@
                </div>
                <div class="grid--full medium-down--hide">
                   <div class="grid__item">
-                     <ul class="site-nav" id="AccessibleNav" style="margin-left:120px; float: left; max-width:1440px;">
-                        <li>
-                           <a href="/collections/meh-x-winnie-v2" class="site-nav__link" data-meganav-type="child">
-                           MehxWinnie
-                           </a>
-                        </li>
-                        <li>
-                           <a href="/collections/chompas" class="site-nav__link" data-meganav-type="child">
-                           KNITWEAR
-                           </a>
-                        </li>
-                        <li>
-                           <a href="/collections/basics-v1" class="site-nav__link" data-meganav-type="child">
-                           MEHBASICS
-                           </a>
-                        </li>
-                        <li>
-                           <a href="/collections/rebelsclo" class="site-nav__link" data-meganav-type="child">
-                           REBELS
-                           </a>
-                        </li>
-                        <li>
-                           <a href="/collections/shoes" class="site-nav__link" data-meganav-type="child">
-                           SHOES
-                           </a>
-                        </li>
-                        <li>
-                           <a href="/collections/meh-details" class="site-nav__link" data-meganav-type="child">
-                           DETAILS
-                           </a>
-                        </li>
-                        <li>
-                           <a href="/collections/meh-undies" class="site-nav__link" data-meganav-type="child">
-                           UNDIES 
-                           </a>
-                        </li>
-                        <li>
-                           <a href="/collections/meh-upcycled" class="site-nav__link" data-meganav-type="child">
-                           UPCYCLED
-                           </a>
-                        </li>
-                        <li>
-                           <a href="/collections/last-units-left" class="site-nav__link" data-meganav-type="child">
-                           ULTIMAS UNIDADES
-                           </a>
-                        </li>
-                        <li class="site-nav--has-dropdown " aria-haspopup="true">
-                           <a href="http://www.mehperu.com" class="site-nav__link" data-meganav-type="parent" aria-controls="MenuParent-10" aria-expanded="false">
-                           #
-                           <span class="icon icon-arrow-down" aria-hidden="true"></span>
-                           </a>
-                           <ul id="MenuParent-10" class="site-nav__dropdown" data-meganav-dropdown="">
-                              <li>
-                                 <a href="/pages/mehgirl" class="site-nav__link" data-meganav-type="child" tabindex="-1">
-                                 #MEHGIRL
-                                 </a>
-                              </li>
-                              <li>
-                                 <a href="/products/mehassistant" class="site-nav__link" data-meganav-type="child" tabindex="-1">
-                                 #MEHASSISTANT
-                                 </a>
-                              </li>
-                              <li>
-                                 <a href="/pages/covid19" class="site-nav__link" data-meganav-type="child" tabindex="-1">
-                                 #COVID19
-                                 </a>
-                              </li>
-                           </ul>
-                        </li>
-                     </ul>
                      <div class="site-nav" style="right: 0; margin-right: 30px;">
                         <div class="header-bar__module header-bar__search">
                            <form action="/search" method="get" class="header-bar__search-form clearfix" role="search">
@@ -1883,7 +1806,7 @@
                         <div class="header-bar__module">
                            <ul class="header-bar__module--list">
                               <li>
-                                 <a href="/account">Mi cuenta</a>
+                                 <a href="/account" id="liMiAccount">Mi cuenta</a>
                               </li>
                               <li>
                                  <a href="/account/logout" id="customer_logout_link">Cerrar sesión</a>
@@ -2075,16 +1998,19 @@
                            <a class="nav-link" id="nav-benefits-tab" data-toggle="tab" href="#nav-benefits" role="tab" aria-controls="nav-benefits" aria-selected="false">Canjea tus puntos</a>
                         </li>
                         <li class="nav-item">
-                           <a class="nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="true">Perfil</a>
+                           <a class="nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Perfil</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" id="nav-cupons-tab" data-toggle="tab" href="#nav-cupons" role="tab" aria-controls="nav-cupons" aria-selected="false">Mis cupones</a>
                         </li>
                      </ul>
                      <div class="tab-content" id="nav-tabContent">
                         <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
                            <div class="rte">
                               <br>
-                              <h3 class="font-weight-bold pl-0 my-4" align="center"><strong>Hola ¡Winnie! - 246 puntos</strong></h3>
+                              <h3 class="font-weight-bold pl-0 my-4" align="center"><strong id="personalInfoH3">Hola ¡Winnie! - 246 puntos</strong></h3>
                               <br>
-                              <div class="row">
+                              <div class="row" id="personalInfoTab">
                                  
                                  <div class="col-md-2"></div>
 
@@ -2237,10 +2163,65 @@
                               <hr>
                            </div>
                         </div>
+                        <div class="tab-pane fade" id="nav-cupons" role="tabpanel" aria-labelledby="nav-cupons-tab">
+                           <div class="rte">
+                              <br>
+                              <h3 class="font-weight-bold pl-0 my-4" align="center"><strong id="cuponsInfoH3">Te quedan 246 puntos disponibles</strong></h3>
+                              <br>
+                              <div class="row" id="cuponsInfoTab">
+                                 
+                                 <div class="col-md-2"></div>
+
+                                 <div class="col-md-4" align="left" id="discountCodeForm">
+                                    <h4>Crear un código de descuento</h4>
+                                    <br>
+                                    <div class="form-group row" style="margin-bottom: 0rem;">
+                                       <label class="col-sm-3 col-form-label">Nº Documento</label>
+                                       <div class="col-sm-9">
+                                          <input type="text" class="form-control" placeholder="Ingresa tu DNI/CI/CE o pasaporte" value="" onclick="this.select();" autocomplete="off" maxlength="15" required>
+                                       </div>
+                                    </div>
+                                    <div class="form-group row" style="margin-bottom: 0rem;">
+                                       <label class="col-sm-3 col-form-label">¿Cuántos puntos deseas canjear?</label>
+                                       <div class="col-sm-9">
+                                          <input type="text" class="form-control" placeholder="Ingrese el número de puntos a canjear" value="10" onclick="this.select();" autocomplete="off" maxlength="3" required>
+                                       </div>
+                                    </div>
+
+                                    <div class="form-group row" style="margin-bottom: 0rem;">
+                                       <div class="col-sm-12" align="center">
+                                          <button class="btn btn-outline-default">Crear código de descuento</button>
+                                       </div>
+                                    </div>
+                                 </div>
+
+                                 <div class="col-md-4">
+                                    <h4>Historial de códigos de descuento</h4>
+                                    <div class="table-wrap" style="border-radius: 10px;">
+                                          <table class="table table-bordered" style="font-size: 12px;">
+                                             <thead class="table-dark">
+                                                <tr>
+                                                   <th>Código</th>
+                                                   <th>Fecha</th>
+                                                   <th>Valor</th>
+                                                   <th>Estado</th>
+                                                </tr>
+                                             </thead>
+                                             <tbody></tbody>
+                                          </table>
+                                    </div>
+                                 </div>
+
+                                 <div class="col-md-2"></div>
+                              </div>
+                              <br>
+                              <hr>
+                           </div>
+                        </div>
                         <div class="tab-pane fade" id="nav-meh-girls-club" role="tabpanel" aria-labelledby="nav-meh-girls-club-tab">
                            <div class="rte">
                               <br>
-                              <h3 class="font-weight-bold pl-0 my-4" align="center"><strong>MEH INTERN - 246 puntos</strong></h3>
+                              <h3 class="font-weight-bold pl-0 my-4" align="center"><strong id="mehPointsH3">MEH INTERN - 246 puntos</strong></h3>
                               <br>
                               <div class="steps-form">
                                  <div class="steps-row setup-panel">
@@ -3743,5 +3724,49 @@
             </g>
          </svg>
       </div>
+      <script>
+         // SHOPIFY CUSTOMER CREDENTIALS
+         const queryString = window.location.search;
+         const urlParams = new URLSearchParams(queryString);
+         const userId = urlParams.get('userId');
+
+         if (userId != null) { 
+            // con sesión
+            var mehPointsH3 = document.getElementById('mehPointsH3');
+            if (mehPointsH3 != null) {
+               mehPointsH3.innerHTML = "MEH INTERN - 246 puntos";
+            }
+            var liMiAccount = document.getElementById('liMiAccount');
+            if (liMiAccount != null) {
+               liMiAccount.innerHTML = "Mi cuenta";
+            }
+            var customer_logout_link = document.getElementById('customer_logout_link');
+            if (customer_logout_link != null) {
+               customer_logout_link.innerHTML = "Cerrar sesión";
+            }
+         } else {
+            // sin sesión
+            var mehPointsH3 = document.getElementById('mehPointsH3');
+            if (mehPointsH3 != null) {
+               mehPointsH3.innerHTML = "Inicia sesión para ver tu información";
+            }
+            var liMiAccount = document.getElementById('liMiAccount');
+            if (liMiAccount != null) {
+               liMiAccount.innerHTML = "Iniciar sesión";
+            }
+            var customer_logout_link = document.getElementById('customer_logout_link');
+            if (customer_logout_link != null) {
+               customer_logout_link.innerHTML = "";
+            }
+            var personalInfoH3 = document.getElementById('personalInfoH3');
+            if (personalInfoH3 != null) {
+               personalInfoH3.innerHTML = "<h3><strong>Inicia sesión para ver tu información</strong></h3>";
+            }
+            var personalInfoTab = document.getElementById('personalInfoTab');
+            if (personalInfoTab != null) {
+               personalInfoTab.innerHTML = "";
+            }
+         }
+      </script>
    </body>
 </html>
